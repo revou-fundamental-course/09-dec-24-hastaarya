@@ -5,13 +5,12 @@
     padding: var(--size-2) 0;
     padding-right: 16px;
     padding-top: 32px;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    position: fixed; /* Set navbar pada posisi tetap */
+    top: 0; /* posisi navbar di paling atas */
     width: 100%; /* Full width */
     z-index: 1;
     overflow: hidden;
-    background-color:aliceblue
-    
+    background-color:aliceblue;
 }
 
 nav{
@@ -20,7 +19,6 @@ nav{
     padding-top: 12px;
     padding-right: 12px;
     padding-bottom: 12px;
-    
 }
 
 nav>a{
@@ -39,7 +37,7 @@ nav>a{
     text-decoration: none;
 }
 
-
+/* border untuk gambar */
 img{
 	border: 1px solid black;
   	border-radius: 4px;
@@ -48,6 +46,7 @@ img{
     
 }
 
+/* gambar untuk sliding banner */
 .banner-img{
     height: 500px;
     background-image:url(https://picsum.photos/750) ;
@@ -419,12 +418,12 @@ a:hover {
 	text-decoration: underline solid var(--light-100) 2px;
 }
 
+/* Responsive Web */
+
 @media only screen and (min-width: 768px) {
 	:root {
 		--container: calc(768px - calc(var(--size-6) * 2));
-	}
-
-    
+	}  
 }
 
 @media only screen and (min-width: 1024px) {
@@ -435,8 +434,6 @@ a:hover {
 		width: 128px;
 	}
 
-    
-    
 	.menu-button {
 		display: none;
 	}
@@ -488,7 +485,6 @@ a:hover {
 	:root {
 		--container: calc(1280px - calc(var(--size-6) * 2));
 	}
-    
 }
 
 @media only screen and (min-width: 1536px) {

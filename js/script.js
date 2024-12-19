@@ -9,8 +9,8 @@ function validateForm() {
 	const email = document.forms['contact-form']['email'].value;
 	const interest = document.forms['contact-form']['interest'].value;
 
-	const isEmail = email.match(/[\w.]+@\w+.\w{2,3}(.\w{2,})?/);
-
+	const isEmail = email.match(/[\w.]+@\w+.\w{2,3}(.\w{2,})?/); //validasi format email yang benar
+	// print error bila nama kosong
 	if (!name) {
 		const errName = document.getElementById('name-error');
 
@@ -18,6 +18,7 @@ function validateForm() {
 		errName.style.visibility = 'visible';
 	}
 
+	// print error bila email kosong
 	if ((email && !isEmail) || !email) {
 		const errEmail = document.getElementById('email-error');
 
@@ -25,6 +26,7 @@ function validateForm() {
 		errEmail.style.visibility = 'visible';
 	}
 
+	// print error bila interest kosong
 	if (interest === 'none') {
 		const errInterest = document.getElementById('interest-error');
 
@@ -32,16 +34,16 @@ function validateForm() {
 		errInterest.style.visibility = 'visible';
 	}
 
-
+	//return alert terkirim 
 	if (name && email && isEmail && interest !== 'none') {
 		alert(`Data anda telah sukses terkirim, ${name}`);
 
 		return false;
 	}
-
 	return false;
 }
 
+//menyembunyikan error bila sudah terisi dengan benar
 function fillInput(fieldName) {
 	const inputValue = document.getElementById(fieldName).value;
 	const errorText = document.getElementById(`${fieldName}-error`);
@@ -62,13 +64,12 @@ function selectInterest() {
 	}
 }
 
-
-
+//Banner AutoSlide next slide
 function nextSlide(){
     showBanner(indexSlide+=1);
 }
 
-
+//fungsi untuk menampilkan hanya 1 banner dari semua gambar yang ada
 function showBanner(n){
     const imageList = document.getElementsByClassName('banner-img');
     
@@ -79,10 +80,8 @@ function showBanner(n){
     for(let i=0;i<imageList.length;i++){
         imageList[i].style.display="none";
     }
-    
+    //display 1 banner
     imageList[indexSlide].style.display="block";
-
-    
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 3000); //setiap 3 detik

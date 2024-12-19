@@ -36,7 +36,9 @@
                 <div class="banner-img banner-2"></div>
                 <div class="banner-img banner-3"></div>
                 <div class="banner-img banner-4"></div>
-                <div class="banner-img banner-5"></div>        
+                <div class="banner-img banner-5"></div>    
+
+                <!-- bagian testimoni -->
                 <div class="about-author">
                     <p class="about-caption">Liburan jadi lebih menyenangkan bersama Aurora Horizons</p>
                     <img src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg" class="author-img" />
@@ -45,6 +47,7 @@
                         <div class="author-info">Microsoft, 69</div>
                     </div>
                 </div>
+                
                 <h2>Mengapa Memilih Kami?</h2>
                 <div class="package-item1">
                     <div class="package-icon">
@@ -108,16 +111,19 @@
                 <h2 class="subsection-title">Contact Us</h2>
                 <p>Sales akan menghubungi Anda 1x24 jam setelah data anda kami terima</p>
                 <form class="contact-form" name="contact-form" onsubmit="return validateForm()">
+                    <!-- Nama -->
                     <div class="form-field">
                         <label for="name" class="input-label">Your name:</label>
                         <input type="text" id="name" name="name" class="input-field" placeholder="First name and last name" oninput="fillInput('name')" />
                         <p class="error-msg" id="name-error">Please fill your name</p>
                     </div>
+                    <!-- Email -->
                     <div class="form-field">
                         <label for="email" class="input-label">Email Address:</label>
                         <input type="text" id="email" name="email" class="input-field" placeholder="example@email.com" oninput="fillInput('email')" />
                         <p class="error-msg" id="email-error">Please fill your email with a correct format</p>
                     </div>
+                    <!-- Interest -->
                     <div class="form-field">
                         <label for="interest" class="input-label">What are you interested in?</label>
                         <select id="interest" name="interest" class="input-field" oninput="selectInterest()">
@@ -144,8 +150,9 @@
                 <h1>Our Packages</h1>
             </header>
 
-        
+            
             <div class="container">
+                <!-- 3 paket pertama -->
                 <div class="package-list">
                     <div class="package-item">
                         <div class="package-icon">
@@ -176,6 +183,7 @@
                     </div>
                 </div>
                 <hr class="border" />
+                <!-- 3 paket kedua -->
                 <div class="package-list">
                     <div class="package-item">
                         <div class="package-icon">
