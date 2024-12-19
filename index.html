@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Aurora Horizons</title>
+    
+</head>
+<body>
+    <header class="main-header">
+        <a href="#top"><img src="css\logo.png" alt=""></a>
+
+        <nav>
+            <a href="#top">Home</a>
+            <a href="#our-package-section">Our Packages</a>
+            <a href="#call-us-section">Call Us</a>
+        </nav>
+    </header>
+    <hr /> 
+    <main>
+        <header class="content-header" id="home-section">
+            <h1>Your Trusted Travel Agent</h1>
+            <h4>Your Happiness is Our Happiness</h4>
+            <h4 id="username-result"></h4>
+        </header>
+
+        
+
+        <!-- Main Content -->
+         <section class="main-container">
+            <!-- Banner Auto Slide Content -->
+            <aside class="about">
+                <div class="banner-img banner-1"></div>
+                <div class="banner-img banner-2"></div>
+                <div class="banner-img banner-3"></div>
+                <div class="banner-img banner-4"></div>
+                <div class="banner-img banner-5"></div>        
+                <div class="about-author">
+                    <p class="about-caption">Liburan jadi lebih menyenangkan bersama Aurora Horizons</p>
+                    <img src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg" class="author-img" />
+                    <div class="author-data">
+                        <div class="author-name">Bill Gates</div>
+                        <div class="author-info">Microsoft, 69</div>
+                    </div>
+                </div>
+                <h2>Mengapa Memilih Kami?</h2>
+                <div class="package-item1">
+                    <div class="package-icon">
+                        <i data-feather="award"></i>
+                    </div>
+                    <div>
+                        <h3>Kepercayaan</h3>
+                        <p> 'Your Trusted Travel Agent,' kami selalu mengutamakan kebutuhan Anda.
+                            Kebahagiaan Anda,  </p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="package-item1">
+                    <div class="package-icon">
+                        <i data-feather="heart"></i>
+                    </div>
+                    <div>
+                        <h3>Kebahagiaan Anda, Prioritas Kami</h3>
+                        <p>"Your Happiness is Our Happiness" bukan hanya slogan, melainkan komitmen.</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="package-item1">
+                    <div class="package-icon">
+                        <i data-feather="feather"></i>
+                    </div>
+                    <div>
+                        <h3>Layanan Personal</h3>
+                        <p>Perjalanan dirancang khusus untuk Anda—karena setiap traveler itu unik.</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="package-item1">
+                    <div class="package-icon">
+                        <i data-feather="flag"></i>
+                    </div>
+                    <div>
+                        <h3>Destinasi Menawan</h3>
+                        <p> Kami membawa Anda menjelajahi keindahan dunia, dari pemandangan aurora hingga cakrawala tropis.</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="package-item1">
+                    <div class="package-icon">
+                        <i data-feather="gift"></i>
+                    </div>
+                    <div>
+                        <h3>Ketenangan Hati</h3>
+                        <p> Dengan pengalaman dan dedikasi kami, Anda bisa menikmati perjalanan tanpa khawatir.</p>
+                        <p></p>
+                    </div>
+                </div>
+            </aside>
+
+            
+                
+            
+        
+            <!-- Form Contact Us -->        
+            <div class="contact">
+                <h2 class="subsection-title">Contact Us</h2>
+                <p>Sales akan menghubungi Anda 1x24 jam setelah data anda kami terima</p>
+                <form class="contact-form" name="contact-form" onsubmit="return validateForm()">
+                    <div class="form-field">
+                        <label for="name" class="input-label">Your name:</label>
+                        <input type="text" id="name" name="name" class="input-field" placeholder="First name and last name" oninput="fillInput('name')" />
+                        <p class="error-msg" id="name-error">Please fill your name</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="email" class="input-label">Email Address:</label>
+                        <input type="text" id="email" name="email" class="input-field" placeholder="example@email.com" oninput="fillInput('email')" />
+                        <p class="error-msg" id="email-error">Please fill your email with a correct format</p>
+                    </div>
+                    <div class="form-field">
+                        <label for="interest" class="input-label">What are you interested in?</label>
+                        <select id="interest" name="interest" class="input-field" oninput="selectInterest()">
+                            <option value="none" selected disabled>Select option</option>
+                            <option value="option 1">Lamington National Park</option>
+                            <option value="option 2">Sea World Helicopter Tour</option>
+                            <option value="option 3">Jet Boat Adventure</option>
+                            <option value="option 4">Life Sydney Zoo</option>
+                            <option value="option 5">Sydney Opera House</option>
+                            <option value="option 6">Russel Falls</option>
+                        </select>
+                        <p class="error-msg" id="interest-error">Please select one interest</p>
+                    </div>
+                    <button type="submit" class="button">Send</button>
+                </form>
+            </div>    
+        </section>
+        
+          
+
+        <!-- Our Packages Content -->
+        <section id="our-package-section">
+            <header class="content-header our-packages-header">
+                <h1>Our Packages</h1>
+            </header>
+
+        
+            <div class="container">
+                <div class="package-list">
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <i data-feather="sun"></i>
+                        </div>
+                        <div class="package-content">
+                            <h3>Lamington National Park</h3>
+                            <p>Taman Nasional Lamington menyediakan makanan dan tempat berlindung bagi beragam jenis burung subtropis, reptil, katak, mamalia, dan invertebrata.</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <i data-feather="slack"></i>
+                        </div>
+                        <div class="package-content">
+                            <h3>Sea World Helicopter Tour</h3>
+                            <p>Helikopter Sea World menawarkan serangkaian tur pemandangan untuk melihat Gold Coast dan area sekitarnya.</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <i data-feather="target"></i>
+                        </div>
+                        <div class="package-content">
+                            <h3>Jet Boat Adventure</h3>
+                            <p>Rasakan sensasi drifting premium berkecepatan tinggi di Paradise Jet Boating, power slide, hiruk pikuk pantai, dan jalur air menarik dan indah lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border" />
+                <div class="package-list">
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <i data-feather="compass"></i>
+                        </div>
+                        <div class="package-content">
+                            <h3>Life Sydney Zoo</h3>
+                            <p>Temukan yang terbaik dari Australia di Wild Life Sydney Zoo - Rumah Lima Besar Australia. Masuki petualangan hewan dan temui hewan favorit Anda.</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <i data-feather="umbrella"></i>
+                        </div>
+                        <div class="package-content">
+                            <h3>Sydney Opera House</h3>
+                            <p>Opera House adalah landmark paling terkenal di Sydney. Ini adalah fasilitas seni pertunjukan serbaguna yang tempat terbesarnya.</p>
+                        </div>
+                    </div>
+                    <div class="package-item">
+                        <div class="package-icon">
+                            <i data-feather="star"></i>
+                        </div>
+                        <div class="package-content">
+                                <h3>Russel Falls</h3>
+                                <p>Ikuti perjalanan ke Air Terjun Russel salah satu air terjun terindah di Tassie, yang bahkan masuk dalam cap pertama di Australia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </section>
+
+        <!-- Call Us Content -->
+        <section id="call-us-section">
+            <header class="content-header our-packages-header">
+                <h1>Call Us</h1>
+            </header>
+            <div class="container">
+                <p>Ingin memesan perjalanan? Ada kendala yang perlu dibantu? Silakan hubungi kami dengan menekan tombol di bawah ini</p>
+                    <a href="tel:555-555-5555"><button class="button">Hubungi Kami</button></a>
+                </div>
+            </div>
+        </section>
+        
+
+   
+    </main>
+    <footer>
+        <span>Aurora Horizons @2024</span>
+    </footer>   
+    <script src="js\script.js"></script> 
+    <script>
+        feather.replace();
+      </script>
+</body>
+</html>
