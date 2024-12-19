@@ -11,6 +11,8 @@
     z-index: 1;
     overflow: hidden;
     background-color:aliceblue;
+	flex-direction: column;
+	align-items: center;
 }
 
 nav{
@@ -19,6 +21,7 @@ nav{
     padding-top: 12px;
     padding-right: 12px;
     padding-bottom: 12px;
+	
 }
 
 nav>a{
@@ -87,7 +90,7 @@ img{
 
 .content-header{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
 .main-item{
@@ -434,9 +437,15 @@ a:hover {
 		width: 128px;
 	}
 
+	.main-header{	
+		flex-direction: row;
+	}
+
 	.menu-button {
 		display: none;
 	}
+
+
 	.navigation-list {
 		flex-direction: row;
 		gap: 0;
@@ -452,6 +461,10 @@ a:hover {
     .main-container{
         flex-direction: row;
     }
+
+	.content-header{
+		margin-top: 150px;
+	}
 
 	.about {
 		width: var(--w-8);
